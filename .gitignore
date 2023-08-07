@@ -1,0 +1,6 @@
+# files
+*.placeholder
+*.gitignore
+
+# directories
+.ceo/
