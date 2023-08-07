@@ -11,6 +11,9 @@ Utilisation :
 La traduction de l'assembleur en objet au format tap se fait en 2 étapes.
 1. la phase d'assemblage au format hex avec FRASM
 2. la création du fichier hex en fichier TAP classique
-
-bin\frasm -o salut.hex salut.asm
-bin\hex2oric salut.tap salut.hex -auto
+~~~
+{
+    bin\frasm -o salut.hex salut.asm
+    bin\hex2oric salut.tap salut.hex -auto
+}
+~~~
