@@ -10,12 +10,17 @@ FRASM permet également de produire un listing du code assemblé, avec une table
 ## Utilisation : 
 La traduction de l'assembleur en objet au format tap se fait en 2 étapes.
 1. la phase d'assemblage au format hex avec FRASM v2.0
-2. la création du fichier hex en fichier TAP classique avec Hex2Oric v2023.004
+2. la création du fichier hex en fichier TAP classique avec Hex2Oric v2023.005
 
-Ci-dessous la syntaxe pour assembler le fichier situé dans le répertoire example.  
+Ci-dessous la syntaxe pour assembler le fichier situé dans le répertoire example pour obtenir un fichier tap autoexec.  
 ~~~
     bin\frasm -o salut.hex salut.asm  
     bin\hex2oric salut.tap salut.hex -auto  
+~~~
+et sans lancement automatique :
+~~~
+    bin\frasm -o salut.hex salut.asm  
+    bin\hex2oric salut.tap salut.hex  
 ~~~
 
 ## Notice Frankenstein Cross Assemblers Users Manual
