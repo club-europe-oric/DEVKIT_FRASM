@@ -1,5 +1,5 @@
 //
-// Version 2023.004 de Hex2Oric revue par Didier / CEO
+// Version 2023.005 de Hex2Oric revue par Didier / CEO
 // Principales modifications : 
 // 	- suppression de l'option -o inutile
 //  - fichier tap par défaut en non auto
@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 char buffer[65536];
-char header[]={ 0x16,0x16,0x16,0x24, 0,0,0x00,0xC7,0,0,0,0,0, 0 };
+char header[]={ 0x16,0x16,0x16,0x24, 0,0,0x80,0x00,0,0,0,0,0, 0 };
 char ligne[80];
 
 hex2dec(char x) 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	char *infile, *oricfile, *outfile, *option_auto;
 	FILE *in, *fd, *out;
 
-	printf("Version v2023.004 de Hex2Oric\n");
+	printf("Version v2023.005 de Hex2Oric\n");
 	
 	if (argc<2)
 	{ 
@@ -45,7 +45,8 @@ int main(int argc, char *argv[])
 		option_auto=argv[3];
 		if (strcmp(option_auto,"-auto")==0)
 		{
-			header[6]=0x80;
+			header[7]=0xc7;
+			printf("option auto\n");
 		}
 	}
 
