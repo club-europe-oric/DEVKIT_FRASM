@@ -24,5 +24,7 @@ et sans lancement automatique :
 ~~~
 
 ## Notice Frankenstein Cross Assemblers Users Manual
+[FRasm User Manual](https://github.com/club-europe-oric/DEVKIT_FRASM/blob/main/frasm/Frankenstein%20Cross%20Assemblers%20Users%20Manual.pdf)
 
 ## Instructions et Annexes pour FRASM
+[FRasm instructions](https://github.com/club-europe-oric/DEVKIT_FRASM/blob/main/frasm/Appendix%20for%20as6502%20Frankenstein%20Assembler.pdf)
